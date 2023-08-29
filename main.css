@@ -1,0 +1,218 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200&display=swap');
+
+
+ :root{
+    --dark:rgb(1, 22, 22);
+    --verde: green;
+    --amarillo: yellow;
+    --primary: #00bdd6;
+    --primary-dark: #00b0c7;
+    --secondary: #fe9143;
+    --secondary-dark: #fe8834;
+    --white: #f5f9fa;
+    --white2: #ebf3f5;
+    --gray: #e1e4e5;
+    --gray2: #c0c6c9;
+    --gray3: #4b4c4d;
+    --black: #323333;
+    --black2: #2a2b2b;
+ }
+
+body {
+    font-family: 'Karla',cursive;
+    background-color: #000022;
+    background-attachment: fixed;
+    color: var(--gray3);
+    font-family: Montserrat,sans-serif;
+    font-size: 14px;
+    text-align: center;
+}
+/*header*/
+.navbar-item{
+    color: var(--verde);
+    font-weight: bold;
+    font-size: 36px;
+    transition: 0.3s ease-in-out all;
+    height: 8vh;
+}
+
+.navbar-item:hover{
+   color: var(--amarillo) !important;
+}
+
+
+/* MAIN*/
+.main-content{
+    height: 92vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.crud-container{
+    width: 60%;
+    padding: 2rem 3rem;
+    overflow: auto;
+    box-shadow: 0 0 1rem 0 rgba(0,0,0,0.4);
+    border-radius: 0.5rem;
+    color: aqua;
+}
+
+.crud-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem 1rem 2rem;
+    border-bottom: 1px solid;
+}
+
+.crud-container h1{
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.button span{
+    margin-left: 10px;
+}
+
+.lista{
+    color: aqua;
+}
+
+.btn-edit{
+    background-color: rgb(125, 186, 12);
+
+}
+
+.btn-delete{
+    background-color: red;
+}
+
+
+/* Skills*/
+.section {
+    padding-top: 7rem;
+    padding-bottom: 7rem; 
+}
+
+section.even {
+    background: linear-gradient(var(--primary),var(--primary-dark));
+}
+
+footer, header, section.even {
+    color: var(--white);
+}
+
+section {
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    display: block;
+
+}
+
+.h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+h1, h3 {
+    text-transform: uppercase;
+}
+h2, h3, h4 {
+    letter-spacing: .3rem;
+}
+h3 {
+    font-size: 2rem;
+}
+
+#skillset>div {
+    grid-gap: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 1rem;
+}
+.imagen{
+    width:150px;
+    height:150px;
+    border-radius:10px;
+    border:5px solid #666;
+    /*-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;*/
+}
+
+.imagen:hover{
+    height: 180px;
+    width: 180px;
+    /*opacity: 0.07;*/
+  /*-webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  transition: opacity 500ms !important;*/
+
+}
+*{margin: 0;padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;}
+    
+    .contenedor{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .contenedor figure{
+       position:relative;
+        height: 180px;
+        cursor: pointer;
+        width: 180px;
+        overflow: hidden;
+        border-radius: 6px;
+    }
+    .contenedor figure img{
+        width: 180px;
+        height: 180px;
+        transition: all 400ms ease-out;
+        border:5px solid #666;
+        will-change: transform;
+    }
+    .contenedor figure .capa{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,103,123,0.7);
+        transition: all 400ms ease-out;
+        opacity: 0;
+        visibility: hidden;
+       text-align: center;
+    }
+    .contenedor figure:hover > .capa {
+        opacity: 1;
+        visibility: visible;
+    }
+    .contenedor figure:hover > .capa h3{
+        margin-top: 70px;
+        margin-bottom: 15px;
+    }
+    .contenedor figure:hover > img{
+        transform: scale(1.3);
+    }
+    .contenedor figure .capa h3{
+        color: #fff;
+        font-weight: 400;
+        margin-bottom: 120px;
+        transition: all 400ms ease-out;
+        margin-top: 30px;
+        size: 20px;
+    }
+
+
+
+
